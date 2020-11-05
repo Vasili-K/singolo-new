@@ -59,6 +59,7 @@ h3 {
     justify-content: space-between;
 }
 .logo {
+    position: relative;
     display: flex;
     font-style: normal;
     font-weight: bold;
@@ -74,7 +75,7 @@ h3 {
     display: flex;
     margin-right: 40px;
 }
-.navigation-link {
+.navigation__link {
     list-style: none;
     font-weight: bold;
     font-size: 12px;
@@ -82,11 +83,14 @@ h3 {
     text-transform: uppercase;
     padding: 0 10px 0 10px;
 }
-.navigation-link a {
+.navigation__link a {
     color: white;
 }
 #home-link {
     color: red;
+}
+.active {
+    background-color: lawngreen;
 }
 .devid-line {
     height: 6px;
@@ -301,13 +305,9 @@ main {
     margin: 10px; 
 }
 
-/*.tool-icon {
-display: inline-block;
-}*/
 .services-text {
-   /* width: 220px;
-    /*height: 104px;*/
-    margin: 10px 10px 10px 10px;
+    max-width: 220px;
+    margin: 10px 10px 10px 20px;
     overflow: hidden;
 }    
 .portfolio {
@@ -320,6 +320,7 @@ display: inline-block;
     margin: 5px;
     padding: 2px;
     color: #767E9E;
+    font-size: 12px;
 }
 .tag-bordered:hover {
     cursor: pointer;
@@ -403,6 +404,10 @@ margin: 8px;
 .net-icon {
     margin: 10px;
 }
+.burger {
+    position: absolute;
+    left: 20px;
+}
 .hamburger {
     position: relative;
     width: 25px;
@@ -449,6 +454,10 @@ margin: 8px;
         margin: 10px;  
         flex: 1 0 24%;
     }
+   .column-paddings {
+        margin-left: 30px;
+        margin-right: 65px;
+   }
     .layout-3-columns > .tool {
         flex: 1 0 35%;
     }
@@ -457,14 +466,12 @@ margin: 8px;
 @media screen and (max-width: 768px) {
     .hamburger {
         display: inline-block; 
-        margin-left: 20px;
-        align-items: center;
     } 
     .logo {
         display: flex;
         margin: 0;
-        justify-content: space-around;
         width: 100%;
+        justify-content: center;
     }
     .header-navigation {
         display: none;
@@ -472,6 +479,22 @@ margin: 8px;
     #first-line {
         margin-top: 94px;
     }
+    .column-paddings {
+        margin-left: 23px;
+        margin-right: 33px;
+   }
+    .picture-net {
+        margin-left: 23px;
+        margin-right: 23px;
+    }
+    .description-portfolio {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .portfolio-tag {
+        margin-left: 30px;
+    }
+    
     .picture-net li {
         list-style: none;
         margin: 7px;  

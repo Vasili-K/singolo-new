@@ -9,20 +9,23 @@
 <body>
     <header class="header" id="header">
         <div class="wrapper header__wrapper">
+
             <div class="logo">
-                <span class="hamburger">
-                    <span class="hamburger-line">                     
-                    </span>
-                </span>
-              <span class="the-logo">SINGOLO<span id="star">*</span></span>  
+                <div class="burger">
+                    <span class="hamburger">
+                        <span class="hamburger-line">                     
+                        </span>
+                    </span> 
+                </div>
+                <span class="the-logo">SINGOLO<span id="star">*</span></span>  
             </div>
             <nav class="header-navigation">
                 <ul class="navigation">
-                    <li class="navigation-link"><a class="active" id="home-link" href="#header">home</a></li>
-                    <li class="navigation-link"><a href="#services">services</a></li>
-                    <li class="navigation-link"><a href="#portfolio">portfolio</a></li>
-                    <li class="navigation-link"><a href="#">adout</a></li>
-                    <li class="navigation-link"><a href="#">contact</a></li>
+                    <li class="navigation__link"><a class="active" id="home-link" href="#header">home</a></li>
+                    <li class="navigation__link"><a class="unactive" href="#services">services</a></li>
+                    <li class="navigation__link"><a class="unactive" href="#portfolio">portfolio</a></li>
+                    <li class="navigation__link"><a class="unactive" href="#">about</a></li>
+                    <li class="navigation__link"><a class="unactive" href="#">contact</a></li>
                 </ul>
             </nav>
    
@@ -30,7 +33,7 @@
 
     </header>
     <hr class="devid-line" id="first-line">
-<main>
+<main id="main-information">
     
     <div class="slider" id="slider">
         <div class="wrapper slider__wrapper">
@@ -236,6 +239,7 @@
        
     </div>
 </footer> 
-    
+
+<script src="script.js"></script>
 </body>
 </html>
