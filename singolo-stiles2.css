@@ -90,7 +90,7 @@ h3 {
     color: red;
 }
 .active {
-    background-color: lawngreen;
+    background-color: rgb(39, 82, 173);
 }
 .devid-line {
     height: 6px;
@@ -325,8 +325,11 @@ main {
 .tag-bordered:hover {
     cursor: pointer;
 }
-.portfolio-tag span:first-child {
+.colored {
     color: #DEDEDE;
+}
+/*.portfolio-tag span:first-child {
+    color: #DEDEDE;*/
 }
 .portfolio-tag {
     padding-bottom: 24px;
@@ -356,9 +359,7 @@ main {
     width: 100%;
     height: 100%;
 }
-/*.portfolio-picture {
-margin: 8px;
-/*width: 20%;*/
+
 .picture-net li:nth-child(1n+13) {
     display: none;
 }
@@ -369,7 +370,9 @@ margin: 8px;
 .portfolio-tag {
     margin-left: 40px;
 }
-
+.picture__hidden {
+    display: none;
+}
 .footer {
     background: #2D303A;
 }
