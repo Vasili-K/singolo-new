@@ -76,7 +76,9 @@ h3 {
 .navigation {
     display: flex;
     margin-right: 40px;
+
 }
+
 .navigation__link {
     list-style: none;
     font-weight: bold;
@@ -87,6 +89,11 @@ h3 {
 }
 .navigation__link a {
     color: white;
+    text-decoration: none;
+}
+.navigation__link a:hover {
+
+    text-decoration: underline;
 }
 #home-link {
     color: red;
