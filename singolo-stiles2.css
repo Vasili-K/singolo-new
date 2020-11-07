@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-    font-family: Lato, Arial, Helvetica, sans-serif;
-  /* max-width: 1020px;*/
+  font-family: Lato, Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -11,8 +10,11 @@ body {
 body, html {
     scroll-behavior: smooth;
 }
-
 h1 {
+    font-size: 25px;
+    line-height: 30px;
+}
+h2 {
     font-size: 30px;
     font-weight: 900;
     font-style: normal;
@@ -511,10 +513,10 @@ main {
     height: 100%;
 }
 .arrowL:hover {
-    cursor: pointer;
+    background: white;
 }
 .arrowR:hover {
-    cursor: pointer;
+    background: white;
 }
 
 .services {
@@ -609,6 +611,7 @@ main {
 }
 .tag-bordered:hover {
     cursor: pointer;
+    
 }
 .colored {
     color: #DEDEDE;
